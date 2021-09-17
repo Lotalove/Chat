@@ -1,0 +1,33 @@
+html
+    head
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet" href="css/login.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        title            
+body
+    div(id= "login-content")
+        div 
+  
+        div(id = "signup-grid")
+            span 
+            div(id = "signup-form")
+                form(id= "form-inputs" action = "/login" method="post") 
+                    div
+                        H1 Logo
+                        h3 Log in
+                    div
+                        input(type="text" name = "username"  placeholder = "Username" required)
+                    div
+                        input(type="password" name="password" placeholder = "Password" required )
+                    div
+                    input(type="submit", value="Log in")
+                    div
+                     
+                        a(href="/signup") Sign up 
+                    div    
+                        a(href="") Forgot Password
+            span 
+            
+        span 

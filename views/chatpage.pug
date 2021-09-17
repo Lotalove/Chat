@@ -1,0 +1,46 @@
+html
+    head
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet" href="css/login.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        title 
+    body
+        div(class="main-grid")
+            div(class = "navigation")
+                a(href="/dashboard")
+                    i(class="material-icons" style= "color:white") arrow_back 
+                H1(class="name") 
+                    = chatroom.users
+                i(class="material-icons" style= "color:white ; text-align:right") settings
+                
+            div(id="content")
+                div(id="message-feed")
+                    each message in chatroom.messages
+                        if message.sender == session.passport.user
+                            div(class="message-sent")
+                                h4(id="names") 
+                                    = message.sender
+                                p 
+                                    = message.txt
+                        else
+                            div(class = "message-recieved")
+                                h4(id="names")
+                                    = message.sender
+                                p
+                                    = message.txt
+                    
+                form(action="/send" method="post" id="messageform" )
+                    div(id="bottom-menu")
+                        div(id="typing-space")
+                            input(type="hidden", name="userid" value=`${chatroom.id}`)
+                            textarea(id="typing-box" name = "msg")
+                        div(id="textbox-buttons")
+                            div
+
+                            div
+                                input(type="submit" id="sub-button" value="Send") 
+                        
+    script(src="/socket.io/socket.io.js")  
+    script(src="/js/dashboard.js")   

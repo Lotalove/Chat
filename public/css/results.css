@@ -1,0 +1,51 @@
+body{
+    background-color: #121212;
+    color: gray ; 
+    padding: 10vw;
+    padding-top: 5vh;
+    overflow-y: hidden;
+}
+button{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 60vw 10vw ;
+    margin-bottom: 3vh;
+}
+
+#main-grid{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-color: gray #121212;
+}
+#convo-box{
+    display: flex;
+    flex-direction: row;
+    background-color:  #222222;
+    color: white;
+    border: solid gray thin;
+    border-radius: 6px;
+    margin-bottom: 1vh;
+}
+
+input[type = search],select{
+    padding: 10px;
+    width: 70%;
+}
+#message-btn{
+    width: 20%;
+    background-color: inherit;
+    border: solid gray thin;
+}
+#message-btn:hover{
+    background-color: #333333;
+}
+#userinfo{
+    flex-grow: 1;
+}

@@ -1,0 +1,113 @@
+body{
+    background-color:#121212;
+    overflow: hidden;
+    scrollbar-color: gray #121212;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; 
+}
+.navigation{
+        background-color: #222223;
+        padding: 1vh;
+        display: grid;
+        grid-template-columns:33vw 33vw 33vw ;
+        min-height: 40px;
+        
+    }
+    .name{
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    #message-feed {
+        min-height: 200px;
+        background-color:#121212;
+        height: 75vh;
+        width: 100vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .message-recieved{
+        float: left;
+        padding-top: 0 ;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-bottom: 3%;
+        color:#fffe ;
+        background-color: gray;
+        border-radius: 8px;
+        text-align: left;
+        width: 51%;
+        width: fit-content;
+        }
+    .message-sent{
+        float: right;
+        padding-top: 0px ;
+        padding-left: 1%;
+        margin-bottom: 3%;
+        color:#fffe ;
+        background-color: #9932CC;
+        border-radius: 8px;
+        text-align: left;
+        width: 51%;
+        width:fit-content;
+        
+    }
+.message-rtext{
+    float: left;
+}
+    #names{
+        font-size: 1.5vh;
+        color:#fffe;
+        padding-top: 0%;
+        padding-bottom: 0px ;
+        margin-top: 0;
+        margin-bottom: 0; 
+
+    }
+    #bottom-menu{background-color: #121212;
+        min-height: 50px;
+        border-top: white solid thin;
+        display: grid;
+        grid-template-columns: 75vw 25vw;
+        grid-template-rows: 100%;
+}    
+    #typing-box{
+        position:absolute;
+        color: white;
+        border: none;
+        background-color: #333333;
+        border-radius: 5px;
+        resize: none;
+        float: left;
+        overflow-y: scroll;
+        height: 100%;
+        width: 75%;
+        margin: 0;
+        scrollbar-color:gray #333333 ;
+    }
+.textbox-buttons{
+    display: flex;
+    flex-direction: column;
+}
+#sub-button {
+    position: absolute;
+    bottom: 0px;
+    margin-top: 1%;
+    height: 10%;
+    width: 25%;
+    border-color: #9932CC;
+    color:#fffe ;
+    background-color: #9932CC;
+}
+   
+.convo{
+    border:1px solid black;
+    border-right: none;  
+}
+input[type="file"] {
+    color: white;
+}
+

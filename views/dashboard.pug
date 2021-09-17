@@ -1,0 +1,28 @@
+html
+    head
+        link(rel="stylesheet" href="css/dashboard.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        title Dashboard
+
+    body
+        form(action="/results", method="get") 
+            div(id="navigation")
+                div  
+                    input(type="search", placeholder="Search ..." name="search" style="float:left")
+                    button
+                        i(class="material-icons" style="font-size: 1rem") search
+                div
+                    i(class="material-icons" style="font-size: 3rem ; float:right ; text-align: top") account_circle
+            
+        div(id= "main-grid")
+            if usermessages.length > 0 
+                each chat in usermessages 
+                    a(href= `/chat/${chat.id}`) 
+                        div(id="convo-box")
+                            h1 
+                                = chat.users
+                            p 
+                                = chat.messages[chat.messages.length-1 ].txt
+            else
+                div(id="convo-box")
+                    p You have no Messages

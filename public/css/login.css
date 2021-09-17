@@ -1,0 +1,61 @@
+#login-content{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: 15vh 70vh 15vh ;    
+    padding: 0;
+    overflow: hidden;
+}
+
+#signup-grid{
+    display: grid;
+    grid-template-columns:20vw 60vw 20vw ;
+    color : white;
+}
+
+#signup-form{
+display: flex;
+justify-content: center;
+border-radius: 5px;
+float:none ;
+}
+a{
+    color: inherit;
+}
+a:visited{
+text-decoration: none; 
+color: inherit;   
+}
+#form-inputs{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    border: solid gray thin;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=submit],select{
+    background-color: #ccc;
+    border-color: #ccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+  input[type=submit]:hover{
+      opacity: 70%;
+  }

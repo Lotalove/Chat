@@ -1,0 +1,49 @@
+body{
+    background-color: #121212;
+    color: gray ; 
+    padding: 10vw;
+    padding-top: 5vh;
+    overflow-y: hidden;
+}
+button{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 60vw 10vw ;
+    margin-bottom: 3vh;
+}
+
+#main-grid{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-color: gray #121212;
+}
+#convo-box{
+    background-color:  #222222;
+    color: white;
+    border: solid gray thin;
+    border-radius: 6px;
+    margin-bottom: 1vh;
+}
+#new-convo-button{
+    position: relative;
+    left: 0;
+    border-radius: 100%;
+    background: inherit;
+    border-color:#9932CC ;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;font-weight: bold;
+    color: white;
+}
+input[type = search],select{
+    padding: 10px;
+    width: 70%;
+}
+
